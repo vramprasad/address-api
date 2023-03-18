@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "65d27881-c2af-4723-bdc3-15ea1729d4b4",
+		"name": "address-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9902/api/v1/address-api/healthcheck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9902",
+					"path": [
+						"api",
+						"v1",
+						"address-api",
+						"healthcheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get address details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clientID\":5\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9902/api/v1/address-api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9902",
+					"path": [
+						"api",
+						"v1",
+						"address-api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
